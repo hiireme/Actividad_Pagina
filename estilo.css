@@ -1,0 +1,407 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 1.2px;
+}
+
+:root {
+    --primary-color: #eb5757;
+    --secondary-color: #222;
+    --light-color: #f9f9f9;
+    --dark-color: #333;
+}
+
+header {
+    width: 100vw;
+    height: 150px;
+    position: fixed;
+    background-color: var(--primary-color);
+    z-index: 2;
+}
+
+header .covid {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+}
+
+header .covid button {
+    width: 140px;
+    height: 35px;
+    border-radius: 18px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+header .covid p {
+    font-size: 18px;
+}
+
+header .menu {
+    width: 100%;
+    height: 75px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-color);
+}
+
+header .menu div {
+    width: 600px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu div a {
+    height: 35px;
+    width: 75px;
+    padding-top: 8px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--light-color);
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+header .menu div a:hover {
+    background-color: var(--secondary-color);
+}
+
+header .menu div button {
+    width: 45px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    background-image: url("C:/Users/Regina/Desktop/Actividad_pagina/icons/cart-regular-24.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    border: none;
+    position: relative;
+}
+
+header .menu div button span {
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    text-align: center;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+main {
+    padding-top: 150px;
+}
+
+
+main .primera {
+    height: 500px;
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url("C:/Users/Regina/Desktop/Actividad_pagina/img/fondo_primera.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--light-color);
+    padding-left: 100px;
+    padding-top: 70px;
+}
+
+main .primera h1 {
+    font-size: 60px;
+}
+
+main .shop_merch {
+    width: 140px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid var(--light-color);
+    background-color: transparent;
+    color: var(--light-color);
+}
+
+main .shop_merch:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    transition: all .5s ease;
+}
+
+#contenedor {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contenedor div {
+    width: 50%;
+}
+
+main .banner {
+    text-align: right;
+    margin-top: 80px;
+    padding-right: 50px;
+}
+
+
+main .cajas {
+    width: 100%vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7vh;
+    padding-right: 7vw;
+    left: 150px;
+}
+
+
+.caja {
+    height: 300px;
+    width: 300px;
+    color: var(--light-color);
+    justify-self: center;
+    align-items: center;
+    background-color: var(--dark-color);
+}
+
+
+main .cajas .caja .num {
+    display: flex;
+    padding-top: 35px;
+    padding-left: 3vh;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+main .sup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100%;
+    padding: 65px 10px;
+    left: 3px;
+    background-color: var(--dark-color);
+    display: block;
+}
+
+footer .fondo-piedepagina {
+    max-width: 1200px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 70px;
+    padding-left: 0;
+}
+
+
+.logo_pie_pagina {
+    padding-left: 0px;
+    position: relative;
+    padding-top: 10vh;
+}
+
+
+.texto_pie_pagina {
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    color: var(--light-color);
+    left: 8px;
+}
+
+
+footer .redes_sociales .redesociales {
+    width: 45px;
+    height: 30px;
+    left: 90%;
+    bottom: 25px;
+    border-radius: 5px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    position: relative;
+    display: inline-block;
+}
+
+main .banner {
+    min-height: 550px;
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url("C:/Users/Regina/Desktop/Actividad_pagina/img/fondo_banner.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+}
+
+main.banner h2 {
+    text-align: right;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: var(--light-color);
+}
+
+.Letras {
+    position: relative;
+    top: 100px;
+    right: 00px;
+    font-size: 30px;
+    color: var(--light-color);
+}
+
+.texto-banner {
+    position: relative;
+    top: 25px;
+    right: 00px;
+    font-size: 20px;
+}
+
+.banner .Letras .boton_banner-2 {
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid var(--light-color);
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.banner .Letras .boton_banner-2:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    transition: all .5s ease;
+    border: var(--primary-color);
+}
+
+main .texto {
+    height: 100vh;
+    width: 100%;
+    padding-left: 17vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .texto .texto1 {
+    border-radius: 6px;
+    padding-top: 50px;
+    padding-left: 25vw;
+    width: 69vw;
+    height: 79vh;
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+}
+
+main .texto .texto1 h2 {
+    font-size: 48px;
+}
+
+main .texto .texto1 .shop4 {
+    margin-top: -60vh;
+    margin-left: -41vw;
+    border-radius: 6px;
+    height: 450px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("C:/Users/Regina/Desktop/Actividad_pagina/img/chica_laptop.png");
+}
+
+main .contenedor-shop {
+    margin: 0;
+    padding: 40px 10px 40px 15px;
+    width: 100%;
+    display: inline-block;
+    border: transparent;
+}
+
+main .lista-de-productos {
+    width: 100%vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7vh;
+    padding-right: 7vw;
+    border: transparent;
+}
+
+ main .boton-productos2 button {
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-color);
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    text-align: center;
+ }
+
+ main .boton-productos2 button:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    transition: all .5s ease;
+    border: var(--primary-color);
+ }
+/* main .contenedor-shop .lista-de-productos article {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+main .contenedor-shop .lista-de-productos span {
+    background-size: cover;
+    margin-bottom: 15px;
+    background-position: 50% 50%;
+    min-height: 10px;
+    width: 5px;
+} */
+
+/*main .contenedor-shop .productos {
+    display: inline-block;
+}
+
+ main .contenedor-shop .productos .prosuctos-imagenes span {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    width: 350px;
+    height: 350px;
+} */
+
+/* .contenedor-shop .texto-shop span { */
+/* font-size: small; */
+/* } */
+/* .productos { */
+/* display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    column-gap: 16px;
+    row-gap: 16px; */
+
+/* margin-bottom: 40px;  */
+
+/* main .productos .productos-imagenes span{
+    width: 100%; 
+} */
